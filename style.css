@@ -1,36 +1,83 @@
 .container{
     margin-bottom: 100px;
-    background-image: url(images/bg-2.png);
-    background-repeat: no-repeat;
-    background-position:left bottom;
 }
-
 .carousel-item{
-    padding: 20px 40px;
+    padding:20px 40px;
 }
 .buy-now-button{
+    border:none;
     background-color: black;
-    border-radius: 5px;
-    border: none;
-    background-image: linear-gradient(to bottom ,#3a3636 0%, black 100%);
-    color: white;
-    padding: 8px 25px;
+    color:white;
+    border-radius: 8px;
+    padding :9px 25px;
     cursor: pointer;
+}
+.carousel-indicators li{
+    background-color: gray;
+    width: 10px;
+    height: 5px;
+    border-radius: 50%;
+}
+.carousel-indicators li.active {
+    width: 20px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #FF9C35;
 
+.heading{
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 .card{
-    
-    border: none;
+    border:none;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px grey;  
-   
+    box-shadow: 5px 5px 10px lightgray;
 }
-
-
-.card-body h5{
+#seeall{
+    color:orange;
+}
+.categories h2{
     text-align: center;
-
+}
+.cat-image1 img{
+    border:none;
+    box-shadow: 5px 5px 10px lightgray;
+    border-radius:5px 15px 5px 30px ;
+    margin:10px;
+    padding:40px;
+}
+.cat-image2 img{
+    border:none;
+    box-shadow: 5px 5px 10px lightgray;
+    border-radius:5px 15px 5px 30px ;
+    margin:10px;
+    padding: 40px;
 }
 
 
+.cat-image3 img{
+    width: 100%;
+    vertical-align: middle;
     
+}
+
+ /*  underline; */
+.cat-underline{
+    
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.cat-underline::after {
+    position: absolute;
+    content: " ";
+    height: 7px;
+    width: 100px;
+    background: transparent linear-gradient(142deg, #FF9C35 0%, #FFD019 100%) 0 0 no-repeat padding-box;
+    border-radius: 10px;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+}
